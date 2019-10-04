@@ -23,7 +23,7 @@ export const Places: Place[] = [
     address: '960 South Fremont Drive, Downers Grove, IL 60515',
     phone: 16902384609,
     weather: {
-      title: 'O\'Kon, Metz and Howell',
+      title: 'Sun',
       icon: 'wb_sunny',
       water: 16,
       temperature: 25
@@ -41,7 +41,7 @@ export const Places: Place[] = [
     address: '1516 Petra Mission Suite 662 Jacquelynstad, ND 15853-3199',
     phone: 16925933691,
     weather: {
-      title: 'Ryan Ltd',
+      title: 'Clouds',
       icon: 'wb_cloudy',
       water: 12,
       temperature: 18
@@ -59,7 +59,7 @@ export const Places: Place[] = [
     address: '59805 Marvin Mall Zulaufchester, NJ 98854-4014',
     phone: 16902384609,
     weather: {
-      title: 'Volkman Group',
+      title: 'Sun',
       icon: 'wb_sunny',
       water: 20,
       temperature: 30
@@ -77,7 +77,7 @@ export const Places: Place[] = [
     address: '3410 Feeney Drive Suite 846 Alexysshire, FL 87677',
     phone: 16902384609,
     weather: {
-      title: 'Bradtke-Abernathy',
+      title: 'Sun',
       icon: 'wb_sunny',
       water: 22,
       temperature: 23
@@ -95,7 +95,7 @@ export const Places: Place[] = [
     address: '377 Quinton Mall Port Werner, MO 89527',
     phone: 16902384609,
     weather: {
-      title: 'Dibbert, Mertz and Breitenberg',
+      title: 'Sun',
       icon: 'wb_sunny',
       water: 23,
       temperature: 24
@@ -113,7 +113,7 @@ export const Places: Place[] = [
     address: '189 Lolita Ford West Filiberto, CO 03388-9028',
     phone: 16902384609,
     weather: {
-      title: 'Fritsch, Wehner and Walsh',
+      title: 'Sun',
       icon: 'wb_sunny',
       water: 16,
       temperature: 19
@@ -131,7 +131,7 @@ export const Places: Place[] = [
     address: '56046 Ethelyn Spur Aniyafort, MS 42848-4765',
     phone: 16902384609,
     weather: {
-      title: 'Powlowski, Schroeder and Schmitt',
+      title: 'Sun',
       icon: 'wb_sunny',
       water: 16,
       temperature: 20.5
@@ -149,7 +149,7 @@ export const Places: Place[] = [
     address: '891 Avis Center Suite 759 East Glennieport, OK 60833-9945',
     phone: 16902384609,
     weather: {
-      title: 'Quigley and Sons',
+      title: 'Sun',
       icon: 'wb_sunny',
       water: 16,
       temperature: 15
@@ -167,7 +167,7 @@ export const Places: Place[] = [
     address: '5798 Mylene Court Suite 762 Port Vella, OK 86324',
     phone: 16902384609,
     weather: {
-      title: 'Berge, Kuhic and Kassulke',
+      title: 'Sun',
       icon: 'wb_sunny',
       water: 16,
       temperature: 17
