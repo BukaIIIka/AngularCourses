@@ -1,0 +1,12 @@
+
+<section class="main-container">
+  <h1>{{ title }}</h1>
+  <section class="flex">
+      <app-places [activePlace]="activePlace" (activePlaceChange)="setActivePlace($event)"></app-places>
+
+      <div [style.textAlign]="'center'">
+        <app-weather [activePlaceWeather]="activePlace.weather"></app-weather>
+        <app-about-place [activePlaceSocial]="activePlace.social_info"></app-about-place>
+      </div>
+  </section>
+</section>

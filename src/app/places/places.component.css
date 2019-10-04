@@ -1,0 +1,33 @@
+.list-of-places {
+  overflow: auto;
+  max-height: 500px;
+}
+
+.place-image {
+  border-radius: 50%;
+  border: .25rem #00000080 solid;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: .5rem;
+  object-fit: cover;
+  /*shape-outside: circle(50%);*/
+  float: left;
+}
+
+/*.place-element:nth-child(2n) .place-image {*/
+/*  float: right;*/
+/*}*/
+/*.place-element:nth-child(2n) .place-address {*/
+/*  text-align: end;*/
+/*}*/
+
+.place-element {
+  display: block;
+  padding: 5px 10px;
+  min-height: 4rem;
+}
+
+.place-element:hover {
+  background-color: #b2ced7;
+  cursor: pointer;
+}
