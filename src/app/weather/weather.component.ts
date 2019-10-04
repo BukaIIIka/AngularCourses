@@ -8,7 +8,12 @@ import {Place} from '../mock/places';
 })
 export class WeatherComponent implements OnInit {
 
-  @Input() public activePlaceWeather!: object;
+  @Input() public activePlaceWeather!: {
+    title: string,
+    icon: string,
+    water: number,
+    temperature: number
+  };
 
   constructor() { }
 
