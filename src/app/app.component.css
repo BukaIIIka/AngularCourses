@@ -4,4 +4,13 @@
   padding: 10px;
 }
 
-.flex { display: inline-flex; }
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.flex > *:first-child { width: 70% }
+.flex > *:nth-child(2) { width: 28% }
+
+.right-card-container {
+  text-align: center;
+}

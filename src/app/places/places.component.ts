@@ -15,9 +15,15 @@ export class PlacesComponent implements OnInit {
   @Output()
   public activePlaceChange: EventEmitter<any> = new  EventEmitter();
 
+  public searchType: string = 'all';
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  setFilterType(type: string) {
+    this.searchType = type;
   }
 
   setActivePlace(place: Place) {

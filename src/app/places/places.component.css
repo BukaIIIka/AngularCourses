@@ -1,25 +1,17 @@
 .list-of-places {
   overflow: auto;
-  max-height: 500px;
+  max-height: 45vh;
 }
 
 .place-image {
   border-radius: 50%;
-  border: .25rem #00000080 solid;
-  width: 2.5rem;
-  height: 2.5rem;
+  border: .25rem #4aa5a080 solid;
+  width: 3.25rem;
+  height: 3.25rem;
   margin: .5rem;
   object-fit: cover;
-  /*shape-outside: circle(50%);*/
   float: left;
 }
-
-/*.place-element:nth-child(2n) .place-image {*/
-/*  float: right;*/
-/*}*/
-/*.place-element:nth-child(2n) .place-address {*/
-/*  text-align: end;*/
-/*}*/
 
 .place-element {
   display: block;
@@ -31,3 +23,30 @@
   background-color: #b2ced7;
   cursor: pointer;
 }
+
+.place-element.active {
+  background-color: #d2eef7;
+}
+
+.as-link {
+  cursor: pointer;
+  display: inline;
+  transition: .3s;
+}
+
+.as-link:hover {
+  color: gray;
+}
+
+.as-link:not(:last-child):after {
+  content: '';
+  border-right: 2px solid gray;
+  height: 100%;
+  margin: 0 .5rem;
+}
+
+.filter-container {
+  text-align: center;
+  font-size: 1.25rem;
+}
+

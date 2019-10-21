@@ -1,10 +1,15 @@
-<mat-card [style.marginRight.rem]="2">
+<mat-card>
   <img mat-card-image [src]='activePlace.imgUrl'>
+  <section class="filter-container">
+    <span class="as-link" (click)="setFilterType('all')">All</span>
+    <span class="as-link" (click)="setFilterType('Beach')">Beaches</span>
+    <span class="as-link" (click)="setFilterType('Pool')">Pools</span>
+    <span class="as-link" (click)="setFilterType('SPA')">SPA</span>
+  </section>
   <mat-card-content class="list-of-places">
     <mat-list>
-      <a mat-list-option *ngFor="let place of places" (click)="setActivePlace(place)" class="place-element">
+      <a mat-list-option *ngFor="let place of places | placesFilter:searchType" (click)="setActivePlace(place)" class="place-element" [class.active]="place == activePlace">
         <img class="place-image" src="{{place.imgUrl}}" alt="images Text">
-  <!--      <h3 matLine> {{place.address}} </h3>-->
         <section matLine class="place-address">
           <p><b>Address:</b> {{place.address}} </p>
           <p class="demo-2"><b>Phone:</b> +{{ place.phone.toString() | slice: 0 : 1}} ({{ place.phone.toString() | slice: 1: 4}}) {{ place.phone.toString() | slice: 4}}</p>

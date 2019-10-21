@@ -7,14 +7,16 @@ import { CommonModule } from '@angular/common';
 import { PlacesComponent } from './places/places.component';
 import { WeatherComponent } from './weather/weather.component';
 import { AboutPlaceComponent } from './about-place/about-place.component';
-import {MatCardModule, MatListModule, MatIconModule} from '@angular/material';
+import {MatCardModule, MatListModule, MatIconModule, MatGridListModule} from '@angular/material';
+import { PlacesFilterPipe } from './places-filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlacesComponent,
     WeatherComponent,
-    AboutPlaceComponent
+    AboutPlaceComponent,
+    PlacesFilterPipe
   ],
   exports: [
     CommonModule
@@ -24,7 +26,8 @@ import {MatCardModule, MatListModule, MatIconModule} from '@angular/material';
     BrowserAnimationsModule,
     MatIconModule,
     MatCardModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

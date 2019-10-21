@@ -8,12 +8,7 @@ import {Place} from '../mock/places';
 })
 export class AboutPlaceComponent implements OnInit {
 
-  @Input() public activePlaceSocial!: {
-    title: string,
-    img: string,
-    followers: number,
-    following: number
-  };
+  @Input() public activePlaceSocial!: Place['social_info'];
 
   constructor() { }
 
